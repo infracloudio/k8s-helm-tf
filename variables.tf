@@ -3,6 +3,11 @@ variable "fe_replicas" {
   default = 3
 }
 
+variable "fe_image"{
+  description = "frontend_image"
+  default = "gcr.io/google_samples/gb-frontend:v3"
+}
+
 variable "do_token" {
   description = "digital ocean auth token"
 }

@@ -10,7 +10,7 @@ module "do-k8s-cluster" {
 
 module "gb-app" {
   source = "./gb-module"
-  #frontend_image = "harshals/gb-frontend:1.0"
+  frontend_image = "${var.fe_image}"
   frontend_replicas = "${var.fe_replicas}"
   kube_config_file = "${module.do-k8s-cluster.kube_config_file}"
 }
