@@ -1,0 +1,8 @@
+name: "Guestbook-Chart"
+version: 1.0.0
+description: Helm Chart for Guestbook application
+keywords:
+  - helm
+  - guestbook
+home: https://github.com/kubernetes/kubernetes/tree/master/examples/guestbook/
+

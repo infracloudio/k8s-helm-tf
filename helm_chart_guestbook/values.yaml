@@ -1,0 +1,10 @@
+redis_master:
+  replicas: 1
+  image: "gcr.io/google_containers/redis:e2e"
+redis_slave:
+  replicas: 2
+  image: "gcr.io/google_samples/gb-redisslave:v1"
+frontend:
+  replicas: 3
+  image: "gcr.io/google_samples/gb-frontend:v3"
+  node_port: 32080
